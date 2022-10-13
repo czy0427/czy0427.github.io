@@ -5,7 +5,14 @@
 </head>
 <body>
 
-<img src="1.png" alt="1" width="128" height="128">
+  <script type="text/javascript">
+    let image=document.getElementById('image');
+    let images=['snow.jpg','cinderella.jpg','bella.jpg','jasmine.jpg','aurora.jpg']
+    setInterval(function(){
+      let random=Math.floor(Math.random() * 5);
+      img.src=images[random];
+    }, 100);
+  </script>
 
   <button type="button">Start</button>
   <button type="button">Pause</button>
